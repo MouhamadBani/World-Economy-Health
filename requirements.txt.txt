@@ -11,3 +11,4 @@ geopy
 scikit-learn
 statsmodels
 tensorflow
+sqlite3
