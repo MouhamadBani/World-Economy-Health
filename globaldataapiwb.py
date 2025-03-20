@@ -158,11 +158,11 @@ def main():
     st.title(" World Economy & Health Dashboard and Forecasting")
 
     st.sidebar.header("Select Options")
-    selected_countries = st.sidebar.multiselect("Select Countries", list(COUNTRIES.keys()), default=["Burkina Faso", "Zimbabwe"])
+    selected_countries = st.sidebar.multiselect("Select Countries", list(COUNTRIES.keys()), default=["Burkina Faso", "South Africa"])
     selected_indicator = st.sidebar.selectbox("Select Indicator", list(INDICATORS.keys()))
     
     st.sidebar.subheader("Forecasting Options")
-    forecast_years = st.sidebar.slider("Select Forecasting Years", 5, 20, 10)
+    forecast_years = st.sidebar.slider("Select Forecasting Years", 5, 20, 12)
     future_years = np.arange(2025, 2025 + forecast_years)
 
     if not selected_countries:
